@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --open --inline --hot --config webpack.dev.js",
     "start": "npm run build && node index.js",
     "test:e2e": "mocha e2e/bootstrap.js --recursive --timeout 120000 --bail -S -R spec e2e",
-    "build": "webpack --config webpack.prod.js && npx ncp index.html dist/index.html",
+    "build": "webpack --config webpack.prod.js && node bin/update-path.js && npx ncp index.html dist/index.html",
     "precommit": "node_modules/.bin/eslint ."
   },
   "author": "",
@@ -28,6 +28,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
+    "replace-in-file": "^3.4.2",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
