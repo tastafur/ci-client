@@ -1,0 +1,22 @@
+$primary-color: #76b852;
+@import '~loaders.css/src/animations/pacman.scss';
+
+.loader-overlay {
+  position: absolute;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.65);
+  &.login {
+    height: calc(100% - 80px);
+  }
+  .loader {
+    z-index: 10000;
+  }
+  &.logs {
+    width: 60%;
+  }
+}

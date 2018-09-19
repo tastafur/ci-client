@@ -1,0 +1,25 @@
+@mixin max-size() {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  @include max-size;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include max-size;
+}
+
+#root {
+  @include max-size;
+}
+
+.app {
+  @include max-size;
+
+  margin-top: 25px;
+}

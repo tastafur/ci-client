@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'device-icons';
+  src:  url('fonts/device-icons.eot?yby0jb');
+  src:  url('fonts/device-icons.eot?yby0jb#iefix') format('embedded-opentype'),
+    url('fonts/device-icons.ttf?yby0jb') format('truetype'),
+    url('fonts/device-icons.woff?yby0jb') format('woff'),
+    url('fonts/device-icons.svg?yby0jb#device-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'device-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-BIQ:before {
+  content: "\3c";
+  color: #2a545a;
+}
+.icon-action_button:before {
+  content: "\6d";
+}
+.icon-appliance:before {
+  content: "\f1";
+}
+.icon-button_off:before {
+  content: "\70";
+}
+.icon-camera_off:before {
+  content: "\77";
+}
+.icon-camera_WLC:before {
+  content: "\76";
+}
+.icon-colour_picker:before {
+  content: "\78";
+}
+.icon-cooling:before {
+  content: "\79";
+}
+.icon-device_heating:before {
+  content: "\7a";
+}
+.icon-device_stat:before {
+  content: "\66";
+}
+.icon-door_sensor_closed:before {
+  content: "\73";
+}
+.icon-double_tap:before {
+  content: "\41";
+}
+.icon-duo_socket_EU:before {
+  content: "\42";
+}
+.icon-duo_socket_IN:before {
+  content: "\43";
+}
+.icon-duo_socket_NA:before {
+  content: "\44";
+}
+.icon-duo_socket_UK:before {
+  content: "\45";
+}
+.icon-fan_off:before {
+  content: "\46";
+}
+.icon-fan_on:before {
+  content: "\47";
+}
+.icon-flame_NA:before {
+  content: "\48";
+}
+.icon-generic_temp:before {
+  content: "\49";
+}
+.icon-hiveActiveCamera:before {
+  content: "\61";
+}
+.icon-hot_water_on:before {
+  content: "\4a";
+}
+.icon-hub_nano:before {
+  content: "\72";
+}
+.icon-humidity:before {
+  content: "\65";
+}
+.icon-leak_detector:before {
+  content: "\4b";
+}
+.icon-light:before {
+  content: "\75";
+}
+.icon-link_broken:before {
+  content: "\6e";
+}
+.icon-linked:before {
+  content: "\4c";
+}
+.icon-long_press:before {
+  content: "\4d";
+}
+.icon-motion_sensor:before {
+  content: "\71";
+}
+.icon-nano_3:before {
+  content: "\62";
+}
+.icon-one_tap:before {
+  content: "\4e";
+}
+.icon-plug_EU:before {
+  content: "\6f";
+}
+.icon-plug_IN:before {
+  content: "\d1";
+}
+.icon-plug_NA:before {
+  content: "\69";
+}
+.icon-plug_UK:before {
+  content: "\6c";
+}
+.icon-receiver_dual:before {
+  content: "\64";
+}
+.icon-receiver_single:before {
+  content: "\63";
+}
+.icon-sense:before {
+  content: "\4f";
+}
+.icon-signal_boost:before {
+  content: "\68";
+}
+.icon-socket_EU:before {
+  content: "\50";
+}
+.icon-socket_IN:before {
+  content: "\51";
+}
+.icon-socket_NA:before {
+  content: "\52";
+}
+.icon-socket_UK:before {
+  content: "\53";
+}
+.icon-stat_2:before {
+  content: "\6b";
+}
+.icon-stat_3:before {
+  content: "\67";
+}
+.icon-switch:before {
+  content: "\54";
+}
+.icon-tanks:before {
+  content: "\55";
+}
+.icon-toilets:before {
+  content: "\56";
+}
+.icon-water_flowing:before {
+  content: "\6a";
+}
+.icon-water_not_flowing:before {
+  content: "\57";
+}

@@ -1,0 +1,27 @@
+.icons-os {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.list-group-item:first-child {
+  margin-bottom: 15px;
+}
+
+
+.list-group-item {
+  &:hover {
+    top: 2px;
+    box-shadow: 0 4px #002bffb0;
+  }
+  &:active {
+    top: 6px;
+    box-shadow: 0 0px #002bffb0;
+  }
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px #002bffb0;
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}

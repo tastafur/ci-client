@@ -1,0 +1,25 @@
+# OSX
+#
+.DS_Store
+#VS Code
+.vscode
+# Xcode
+#
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+# Android/IntelliJ
+#
+.idea
+*.iml
+# node.js
+#
+dist
+node_modules/
+npm-debug.log
+yarn-error.log
