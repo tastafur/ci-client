@@ -4,7 +4,8 @@ export default
     const opts = {
       method,
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded;'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: body ? JSON.stringify(body) : null
     };

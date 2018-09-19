@@ -31,7 +31,7 @@ export default class PhonesList extends Component {
                     <ListGroupItem>
                       <img
                         className={'icons-os'}
-                        src={`http://localhost:3000/icons-${phone.os.indexOf('iOS') > -1 ? 'apple' : 'android'}.png`}
+                        src={`https://ci-workshop-server.herokuapp.com/icons-${phone.os.indexOf('iOS') > -1 ? 'apple' : 'android'}.png`}
                       />
                       {phone.DeviceName}
                     </ListGroupItem>

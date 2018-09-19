@@ -11,7 +11,7 @@ import { getPhones } from '../services/phones';
 
 export function* phonesProcess() {
   try {
-    const phones = yield call(getPhones, { baseUrl: 'http://localhost:3000'});
+    const phones = yield call(getPhones, { baseUrl: 'https://ci-workshop-server.herokuapp.com'});
     yield put(phonesSet(phones));
     yield put(mainLoading(false));
   } catch (error) {

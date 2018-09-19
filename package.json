@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --inline --hot --config webpack.dev.js",
+    "dev": "webpack-dev-server --open --inline --hot --config webpack.dev.js",
+    "start": "npm run build && node index.js",
     "test:e2e": "mocha e2e/bootstrap.js --recursive --timeout 120000 --bail -S -R spec e2e",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && npx ncp index.html dist/index.html",
     "precommit": "node_modules/.bin/eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
+    "express": "^4.16.3",
     "loaders.css": "^0.1.2",
+    "ncp": "^2.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",

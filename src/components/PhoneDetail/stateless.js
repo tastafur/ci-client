@@ -33,7 +33,7 @@ export default class PhoneDetail extends Component {
                   Mobile: {phone.DeviceName}
                   <img
                     className={'icons-os'}
-                    src={`http://localhost:3000/${phone.icon}.png`}
+                    src={`https://ci-workshop-server.herokuapp.com/${phone.icon}.png`}
                   />
                 </Panel.Title>
               </Panel.Heading>
@@ -47,7 +47,7 @@ export default class PhoneDetail extends Component {
             <LinkContainer to={'/phone-list'}>
               <img
                 className={'icons-os icon-arrow button-back'}
-                src={`http://localhost:3000/icon-back.png`}
+                src={`https://ci-workshop-server.herokuapp.com/icon-back.png`}
               />
             </LinkContainer>
           </Col>
