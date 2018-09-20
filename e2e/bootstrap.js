@@ -8,7 +8,7 @@ const globalVariables = {
 
 // puppeteer options
 let opts;
-if(process.env.CI) {
+if(!process.env.CI) {
   opts = {
     headless: false,
     slowMo: 100,
