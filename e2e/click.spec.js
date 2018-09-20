@@ -3,7 +3,7 @@ describe('test navigation webapp', () => {
 
   before (async () => {
     page = await browser.newPage();
-    await page.goto('http://localhost:8080');
+    await page.goto('http://localhost:3003');
   });
 
   after (async () => {
