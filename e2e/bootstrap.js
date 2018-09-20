@@ -7,11 +7,21 @@ const globalVariables = {
 };
 
 // puppeteer options
-const opts = {
-  headless: false,
-  slowMo: 100,
-  timeout: 12000
-};
+let opts;
+if(process.env.CI) {
+  opts = {
+    headless: false,
+    slowMo: 100,
+    timeout: 12000
+  };
+} else {
+  opts = {
+    args: ['--no-sandbox'],
+    slowMo: 100,
+    timeout: 12000
+  };
+}
+
 
 // expose variables
 before (async () => {
