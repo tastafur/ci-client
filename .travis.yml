@@ -7,3 +7,10 @@ cache:
 branches:
   only:
   - master
+jobs:
+  include:
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: heroku
+        api_key: $HEROKU_AUTH_TOKEN
