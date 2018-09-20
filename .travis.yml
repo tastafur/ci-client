@@ -21,8 +21,10 @@ jobs:
   include:
     - stage: validation
       script: npm run lint
-    - stage: validation
-      script: npm run test:e2e
+    - stage: test
+      script: |
+        yarn start
+        yarn test:e2e
     - stage: deploy
       script: skip
       deploy:
