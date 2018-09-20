@@ -16,7 +16,9 @@ if(!process.env.CI) {
   };
 } else {
   opts = {
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
+    slowMo: 100,
+    timeout: 12000
   };
 }
 
