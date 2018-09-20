@@ -14,3 +14,4 @@ jobs:
       deploy:
         provider: heroku
         api_key: $HEROKU_AUTH_TOKEN
+        app: ci-workshop-client
