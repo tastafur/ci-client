@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 const replace = require('replace-in-file');
 
 const options = {

@@ -8,7 +8,8 @@
     "start": "npm run build && node index.js",
     "test:e2e": "mocha e2e/bootstrap.js --recursive --timeout 120000 --bail -S -R spec e2e",
     "build": "webpack --config webpack.prod.js && node bin/update-path.js && npx ncp index.html dist/index.html",
-    "precommit": "node_modules/.bin/eslint ."
+    "lint": "npx eslint .",
+    "precommit": "npm run lint"
   },
   "author": "",
   "license": "ISC",

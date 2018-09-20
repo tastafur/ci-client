@@ -1,5 +1,6 @@
-const express = require('express');
+/* eslint no-console: 0 */
 
+const express = require('express');
 
 const app = express();
 
