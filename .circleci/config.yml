@@ -65,6 +65,8 @@ jobs:
 
       - run: yarn start &
 
+      - run: hostname -f
+
       - run: yarn test:e2e
 
       - persist_to_workspace:
