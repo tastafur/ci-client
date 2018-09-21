@@ -12,4 +12,4 @@ app.use(function(req, res, next) {
 
 app.use(express.static('dist'));
 
-app.listen(process.env.PORT || 8080, () => console.log('Example app listening!'));
+app.listen(0, () => console.log('Example app listening!'));
