@@ -16,6 +16,7 @@ if(!process.env.CI) {
   };
 } else {
   opts = {
+    ignoreHTTPSErrors: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   };
 }
