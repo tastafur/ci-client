@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --inline --hot --config webpack.dev.js",
     "start": "npm run build && node index.js",
-    "test:e2e": "mocha e2e/bootstrap.js --recursive --timeout 120000 --bail -S -R spec e2e",
+    "test:e2e": "mocha e2e/bootstrap.js --recursive --timeout 120000 --bail --exit -S -R spec e2e",
     "build": "webpack --config webpack.prod.js && node bin/update-path.js && npx ncp index.html dist/index.html",
     "lint": "npx eslint .",
     "precommit": "npm run lint"
