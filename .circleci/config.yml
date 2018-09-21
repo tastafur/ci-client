@@ -28,13 +28,50 @@ jobs:
           paths:
             - node_modules
 
-      # run tests!
       - run: yarn lint
 
       - persist_to_workspace:
           root: ~/ci-client
           paths:
             - node_modules
+
+  e2e:
+    docker:
+      - image: circleci/node:8.12.0-browsers
+
+    working_directory: ~/ci-client
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+      - restore_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+
+      - run: yarn install
+
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+
+      - run: yarn start &
+
+      - run: yarn test:e2e
+
+      - persist_to_workspace:
+          root: ~/ci-client
+          paths:
+            - node_modules
+
   deploy:
     docker:
       - image: buildpack-deps:trusty
@@ -53,9 +90,17 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy:
+
+      - e2e:
           requires:
             - lint
+          filters:
+            branches:
+              only: master
+
+      - deploy:
+          requires:
+            - e2e
           filters:
             branches:
               only: master
