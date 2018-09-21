@@ -1,4 +1,4 @@
-describe('test navigation webapp', () => {
+describe('test navigation webapp', function testExample() {
   let page;
   this.timeout(30000);
 
