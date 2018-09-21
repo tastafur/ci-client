@@ -4,6 +4,7 @@ describe('test navigation webapp', function testExample() {
 
   before (async () => {
     page = await browser.newPage();
+    page.setExtraHTTPHeaders({ 'upgrade-insecure-requests': '0' });
     await page.goto('http://localhost:8080');
   });
 
