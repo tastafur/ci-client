@@ -16,7 +16,7 @@ if(!process.env.CI) {
   };
 } else {
   opts = {
-    args: ['--no-sandbox'],
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
     slowMo: 100,
     timeout: 12000
   };
