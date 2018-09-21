@@ -1,5 +1,6 @@
 describe('test navigation webapp', () => {
   let page;
+  this.timeout(30000);
 
   before (async () => {
     page = await browser.newPage();
